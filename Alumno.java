@@ -53,13 +53,19 @@ public class Alumno
     public int mediaAlumno() 
     {
         int mediaAlumno = 0;
-        int a;
+        int cont;
         if (notas.length != 0) {
-            for (a = 0; a < notas.length; a++) {
-                mediaAlumno  += notas[a];
+            for (cont = 0; cont < notas.length; cont++) {
+                mediaAlumno  += notas[cont];
             }
-            mediaAlumno  = (mediaAlumno / a);
-        }   
-        return mediaAlumno();
+            mediaAlumno  = (mediaAlumno / cont);
+        }  
+        else{
+            System.out.println("error notas no introducidas");
+            mediaAlumno = -1;
+        }
+        return mediaAlumno;
     }
+    
+   
 }
