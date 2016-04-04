@@ -7,10 +7,15 @@
  */
 public class Alumno
 {
+    //nombre
     private String nombre;
+    //edad
     private int edad;
+    //numclase
     private int numClase;
+    //notasAlumno
     private int notas[];
+    //nota minima de aprobado 
     public static int APROBADO_MIN = 5;
     
     /**
