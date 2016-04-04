@@ -21,10 +21,11 @@ public class Alumno
     /**
      * Constructor for objects of class Alumno
      */
-    public Alumno(String nombre , int edad)
+    public Alumno(String nombre , int edad ,int numClase)
     {
        this.nombre = nombre;
-       this.edad = edad;    
+       this.edad = edad;
+       this.numClase= numClase;
        notas = new int[0];
     }
 
@@ -72,5 +73,13 @@ public class Alumno
         return mediaAlumno;
     }
     
-   
+     /**
+     * Muestra  los datos de los alumnos.
+     */
+    public void mostrarDatos() 
+    {
+       System.out.println("Alumno: " + nombre + "\n Edad: " + edad + "\n Número de clase: " + numClase + "\n Nota media: " + mediaAlumno()  + "\n ");
+    }
 }
+   
+
